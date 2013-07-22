@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <link type="text/css" rel="stylesheet" 
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <style type="text/css">
+     
+      /*desktop*/
+      @media (min-width: 980px)
       body {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        padding-top: 50px;
       }
       .container {
-        width: 960px;
+        width: 980px;
       }
-      p.lead {
+
+      /*Landscape phones*/
+      @media (max-width: 480px) {
+       .copy{
         padding-top: 15px;
       }
       .navigation, .pitch, .section1, .section2, .faq, .footer {
@@ -39,10 +46,31 @@
     </style>
   </head>
   <body>
+   
+    <!--http://twitter.github.ia/boostrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-topr">
+      <div class="navbar-innern">
+        <div class="containero">
+	  <button type= "button" class="btn btn-navbar"
+		  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="brand" href="#">Monthly Threads.</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home.</a></li>
+              <li><a href="#about">About.</a></li>
+              <li><a href="#contact">Contact.</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
+	    Logo
         </div>
         <div class="span6 blank">
           Blank
